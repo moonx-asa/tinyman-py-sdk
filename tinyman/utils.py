@@ -96,7 +96,7 @@ class TransactionGroup:
     def sign(self, user):
         user.sign_transaction_group(self)
     
-    def sign_with_logicisg(self, logicsig):
+    def sign_with_logicsig(self, logicsig):
         address = logicsig.address()
         for i, txn in enumerate(self.transactions):
             if txn.sender == address:
